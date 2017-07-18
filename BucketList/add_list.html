@@ -1,0 +1,76 @@
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/add_list.css" media="screen" />
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="add_list.js"></script>
+
+</head>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+
+            <!-- Navbar -->
+            <nav class="navbar navbar-default">
+                <div class="container">
+                  <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">Pre-Interview Challenge</a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="login">LOGIN</a></li>
+                        <li><a href="login">REGISTER</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                     </ul>
+                  </div>
+                </div>
+            </nav>
+            <!-- Tasks not done -->
+            <div class="bucketlist not-done">
+             <h1>Todos</h1>
+                <input type="text" class="form-control add-bucketlist" placeholder="Add bucketlist">
+                    <button id="checkAll" class="btn btn-success">Mark all as done</button>
+
+                    <hr>
+                    <ul id="sortable" class="list-unstyled">
+                    <li class="ui-state-default">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" />Go to Jay - Z concert</label>
+                        </div>
+                    </li>
+                    <li class="ui-state-default">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" />Run a marathon</label>
+                        </div>
+                    </li>
+                    <li class="ui-state-default">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" />Tame a wolf</label>
+                        </div>
+                    </li>
+                </ul>
+                <div class="todo-footer">
+                    <strong><span class="count-todos"></span></strong> Items Left
+                </div>
+            </div>
+        </div>
+        <!-- Tasks completed-->
+        <div class="col-md-6">
+            <div class="todolist">
+             <h1>Already Done</h1>
+                <ul id="done-items" class="list-unstyled">
+                    <li>Visit a wonder-of-the-world destination(any) <button class="remove-item btn btn-default btn-xs pull-right"><span class="glyphicon glyphicon-remove"></span></button></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
